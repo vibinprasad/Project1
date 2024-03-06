@@ -21,9 +21,7 @@ public class base{
 	public static WebDriver driver ;
 	public static Logger logger;
 	
- 	
-   	
-	@BeforeClass(groups="smoke")
+	@BeforeClass(groups={"smoke","sanity"})
 	@Parameters({"browsers"})
 	public  void driverSetup(String browser) throws InterruptedException, IOException {
 		logger =LogManager.getLogger(this.getClass());
@@ -47,7 +45,7 @@ public class base{
 		}
 
 	
-	@AfterClass(groups="smoke")
+	@AfterClass(groups={"smoke","sanity"})
 	public void closeBrowser()
 	{
 		driver.quit();

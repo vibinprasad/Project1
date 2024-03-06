@@ -16,6 +16,7 @@ public class BaseClass
 	static Properties p;
 	static Logger logger;
 	
+	
 	public static WebDriver initilizeBrowser() throws IOException
 	{
 		switch(getProperties().getProperty("browser").toLowerCase())

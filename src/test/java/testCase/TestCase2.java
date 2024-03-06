@@ -20,7 +20,7 @@ public class TestCase2 extends base {
 	giftcard_page  gift_carrd;
 	public excel_utility excel= new excel_utility("C:\\Users\\2303634\\eclipse-workspace\\Hackathon_Project-1\\src\\test\\java\\Utilities\\Input.xlsx");
 	
-	@Test(priority=0,groups = { "smoke" })
+	@Test(priority=0, groups = { "smoke" })
 	 public void submenu_printcheck() throws InterruptedException, IOException {
 		 search_result= new search_result_page(driver); 
 		 search_result.scroll_down();

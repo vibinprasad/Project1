@@ -49,6 +49,8 @@ public class ExtentReportManager extends base implements ITestListener{
 		
 		test=extent.createTest(result.getName());
 		test.log(Status.PASS, "Test Case Passed is: "+result.getName());
+		
+		test.assignCategory(result.getMethod().getGroups());
 		logger.info("Passed" + result.getName());
 		
 		try 

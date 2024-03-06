@@ -158,9 +158,11 @@ public class giftcard_page extends base {
 	}
 	
 	public WebElement Send_message() {
+		
 		Message.click();
 		return Message;
 	}
+	
 	public String AlertMessage() {
 		
 		return AlertMessage.getAttribute("validationMessage");

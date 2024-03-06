@@ -3,12 +3,8 @@ package testCase;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.List;
-
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import Base.base;
 import POM.giftcard_page;
 import POM.home_page;
@@ -22,7 +18,7 @@ public class TestCase3 extends base {
 	giftcard_page  gift_carrd;
 	public excel_utility excel= new excel_utility("C:\\Users\\2303634\\eclipse-workspace\\Hackathon_Project-1\\src\\test\\java\\Utilities\\Input.xlsx");
 	
-	@Test(priority=0,groups = { "smoke" })
+	@Test(priority=0, groups = { "smoke" })
 	public void choose_giftcard_validate() throws FileNotFoundException, IOException, InterruptedException{
 				 gift_carrd= new giftcard_page(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
@@ -87,7 +83,7 @@ public class TestCase3 extends base {
   screenShot("giftcard");
 	
 	 }
-	 @Test(priority=1,groups = { "smoke" })
+	 @Test(priority=1, groups = { "smoke" })
 	public void checkout_validation() throws FileNotFoundException, IOException {
 		
 		 String rremail = excel.getCellData("Sheet4", 10, 1);

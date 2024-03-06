@@ -5,10 +5,11 @@
   	<listener class-name="testCase.ExtentReportManager" />
   </listeners>
   <test thread-count="5" name="Test">
-   <parameter name = "browsers" value="edge"></parameter>
+   <parameter name = "browsers" value="chrome"></parameter>
    <groups>
    <run>
    <include name="smoke"></include>
+    <include name="sanity"></include>
    </run>
    </groups>
     <classes>

@@ -51,7 +51,7 @@ public class home_page extends base{
 	
 	public void clicksearchbtn(){
 		search_button.click();
-		
+	
 	}
 	
 	
@@ -61,6 +61,7 @@ public class home_page extends base{
 		Actions a= new Actions(driver);
 		a.keyUp(Keys.PAGE_UP).perform();
 		(Page_title).click();
+		driver.close();
 		}
 
 	public void Hover() throws InterruptedException {
@@ -72,6 +73,7 @@ public class home_page extends base{
 	public List<WebElement> Living_Options() {
 		List<WebElement> sub_menu =(Options_Living);
 		return sub_menu;
+		
 		}
 
  

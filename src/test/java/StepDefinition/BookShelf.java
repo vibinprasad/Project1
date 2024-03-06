@@ -17,7 +17,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 public class BookShelf extends BaseClass {
-	public WebDriver driver = BaseClass.getDriver();
+	public WebDriver driver = getDriver();
 	
 	Logger logger=BaseClass.getlogger1();
 	public home_page homepage = new home_page(driver);
